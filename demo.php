@@ -5,7 +5,7 @@
 // Specify the API endpoint to obtain student information
 $apiEndpoint = 'https://data.gov.bh/api/explore/v2.1/catalog/datasets/01-statistics-of-students-nationalities_updated/records?where=colleges%20like%20%22IT%22%20AND%20the_programs%20like%20%22bachelor%22&limit=100';
 
-// Fetch data from the API using file_get_contents
+// Fetching data from the API using file_get_contents
 $apiResponse = file_get_contents($apiEndpoint);
 
 // If the response fails, display an error message and halt execution
