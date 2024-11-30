@@ -13,7 +13,7 @@ if ($apiResponse === false) {
     exit('Failed to retrieve data from the API.');
 }
 
-// Convert the API's JSON response into an associative PHP array
+// Converting the API's JSON response into an associative PHP array
 $dataArray = json_decode($apiResponse, false);
 
 // Stopping the execution + show an error if JSON parsing fails
