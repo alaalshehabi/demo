@@ -16,7 +16,7 @@ if ($apiResponse === false) {
 // Convert the API's JSON response into an associative PHP array
 $dataArray = json_decode($apiResponse, false);
 
-// Stop execution and show an error if JSON parsing fails
+// Stopping the execution and show an error if JSON parsing fails
 if ($dataArray === null) {
     exit('Error in JSON decoding.');
 }
