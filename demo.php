@@ -1,6 +1,6 @@
 
 <?php
-// Step 1: Retrieve Data
+// Step 1: Retrieve Data Implimentation
 
 // Specify the API endpoint to obtain student information
 $apiEndpoint = 'https://data.gov.bh/api/explore/v2.1/catalog/datasets/01-statistics-of-students-nationalities_updated/records?where=colleges%20like%20%22IT%22%20AND%20the_programs%20like%20%22bachelor%22&limit=100';
@@ -14,7 +14,7 @@ if ($apiResponse === false) {
 }
 
 // Convert the API's JSON response into an associative PHP array
-$dataArray = json_decode($apiResponse, true);
+$dataArray = json_decode($apiResponse, false);
 
 // Stop execution and show an error if JSON parsing fails
 if ($dataArray === null) {
